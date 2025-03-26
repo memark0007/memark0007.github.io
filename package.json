@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-glassmorphism",
+  "version": "1.0.0",
+  "description": "Software Engineer portfolio with Glassmorphism design",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/tailwind.output.css",
+    "watch:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/tailwind.output.css --watch",
+    "build": "npm run build:css",
+    "dev": "npm run watch:css"
+  },
+  "keywords": [
+    "portfolio",
+    "software engineer",
+    "glassmorphism",
+    "github pages"
+  ],
+  "author": "KITTISAK LAMNOI",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
+}

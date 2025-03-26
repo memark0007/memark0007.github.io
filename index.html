@@ -1,256 +1,780 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en" class="dark scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ชื่อของคุณ | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KITTISAK LAMNOI - Software Engineer</title>
+    <meta name="description"
+        content="Portfolio of Kittisak Lamnoi, a Software Engineer with experience in enterprise systems, web development, and AI technologies.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.output.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="KITTISAK LAMNOI - Software Engineer">
+    <meta property="og:description"
+        content="Software Engineer with expertise in enterprise systems, web development, and AI technologies.">
+    <meta property="og:image" content="assets/images/profile-photo.jpg">
+    <meta property="og:url" content="https://memark0007.github.io">
+    <meta property="og:type" content="website">
 </head>
-<body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">ชื่อของคุณ</div>
-                <ul class="nav-links">
-                    <li><a href="#home">หน้าหลัก</a></li>
-                    <li><a href="#about">เกี่ยวกับฉัน</a></li>
-                    <li><a href="#skills">ทักษะ</a></li>
-                    <li><a href="#projects">ผลงาน</a></li>
-                    <li><a href="#contact">ติดต่อ</a></li>
-                </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
+
+<body
+    class="font-sans bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-900 dark:to-slate-800 transition-colors duration-300">
+    <!-- Background Decorations -->
+    <div class="bg-decoration"></div>
+
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="glassmorphism-nav mx-auto px-6 py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#"
+                    class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 transition-all duration-500">
+                    KITTISAK
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-item">Home</a>
+                    <a href="#about" class="nav-item">About</a>
+                    <a href="#experience" class="nav-item">Experience</a>
+                    <a href="#skills" class="nav-item">Skills</a>
+                    <a href="#contact" class="nav-item">Contact</a>
                 </div>
-            </nav>
-        </div>
+
+                <!-- Dark/Light Mode Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-full glassmorphism-btn">
+                    <i class="fas fa-moon dark:hidden text-blue-600"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 glassmorphism-btn rounded-lg">
+                    <i class="fas fa-bars dark:text-white"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="container mx-auto hidden mt-4 glassmorphism-card p-6 rounded-xl">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-item mobile-nav-item">Home</a>
+                    <a href="#about" class="nav-item mobile-nav-item">About</a>
+                    <a href="#experience" class="nav-item mobile-nav-item">Experience</a>
+                    <a href="#skills" class="nav-item mobile-nav-item">Skills</a>
+                    <a href="#contact" class="nav-item mobile-nav-item">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>สวัสดี, ฉันคือ <span>ชื่อของคุณ</span></h1>
-                <h2>Software Engineer</h2>
-                <p>พัฒนาซอฟต์แวร์ที่มีคุณภาพด้วยความหลงใหลในเทคโนโลยี</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">ดูผลงาน</a>
-                    <a href="#contact" class="btn secondary-btn">ติดต่อฉัน</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-16">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <!-- Text Content -->
+                    <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0 fadeIn">
+                        <h1
+                            class="text-5xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 leading-tight">
+                            KITTISAK LAMNOI
+                        </h1>
+                        <h2 class="text-2xl md:text-3xl font-semibold mb-6 dark:text-white text-slate-800">
+                            Software Engineer
+                        </h2>
+                        <p class="text-lg mb-8 dark:text-slate-300 text-slate-600 max-w-xl">
+                            Building enterprise systems and creating innovative solutions with modern technologies.
+                            Passionate about clean code and user-centered design.
+                        </p>
+                        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                            <a href="#contact" class="glassmorphism-btn-primary px-6 py-3 rounded-full">
+                                Get in Touch
+                            </a>
+                            <a href="#experience" class="glassmorphism-btn px-6 py-3 rounded-full dark:text-white">
+                                View My Experience
+                            </a>
+                        </div>
+                    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">เกี่ยวกับฉัน</h2>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="https://via.placeholder.com/300" alt="รูปของฉัน">
-                </div>
-                <div class="about-text">
-                    <p>สวัสดีครับ! ฉันเป็น Software Engineer ที่มีประสบการณ์ในการพัฒนาเว็บและแอปพลิเคชัน ฉันมีความหลงใหลในการเขียนโค้ดที่สะอาด มีประสิทธิภาพ และง่ายต่อการบำรุงรักษา</p>
-                    <p>ประสบการณ์การทำงานของฉันครอบคลุมตั้งแต่การพัฒนา frontend และ backend รวมถึงการทำงานกับฐานข้อมูลและ cloud services</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <h3>การศึกษา</h3>
-                            <p>ปริญญาตรี/โท สาขาวิทยาการคอมพิวเตอร์</p>
-                            <p>มหาวิทยาลัย...</p>
-                        </div>
-                        <div class="info-item">
-                            <h3>ประสบการณ์</h3>
-                            <p>X ปีในการพัฒนาซอฟต์แวร์</p>
-                            <p>ทำงานกับบริษัท A, B, C</p>
+                    <!-- Profile Image -->
+                    <div class="md:w-1/2 flex justify-center fadeIn">
+                        <div class="profile-container">
+                            <div class="profile-card">
+                                <img src="assets/images/profile-photo.jpg" alt="KITTISAK LAMNOI" class="profile-image">
+                            </div>
                         </div>
                     </div>
-                    <a href="#" class="btn primary-btn">ดาวน์โหลด CV</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">ทักษะและเทคโนโลยี</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>ภาษาโปรแกรม</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Java</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <!-- เพิ่มทักษะอื่นๆ ตามต้องการ -->
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>เทคโนโลยีและเฟรมเวิร์ค</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-name">React</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Node.js</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Django</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <!-- เพิ่มทักษะอื่นๆ ตามต้องการ -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">ผลงานของฉัน</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>ชื่อโปรเจค 1</h3>
-                        <p>คำอธิบายโปรเจค 1 โดยย่อ ระบุเทคโนโลยีที่ใช้และปัญหาที่แก้ไข</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                <div class="glassmorphism-card p-8 md:p-10 rounded-2xl max-w-4xl mx-auto slideInUp">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Personal Info -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-6 dark:text-white text-slate-800">Personal Information</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 w-5 text-blue-500"></i>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        125 Rim Subdistrict, Tha Wang Pha District, Nan 55140, Thailand
+                                    </span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-phone mt-1 w-5 text-blue-500"></i>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        +66 634325851
+                                    </span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 w-5 text-blue-500"></i>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        kittisak.lamnoi@gmail.com
+                                    </span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-graduation-cap mt-1 w-5 text-blue-500"></i>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        B.Sc. in Computer Science, Minor in Finance and Banking<br>
+                                        Chiang Mai University (2019-2023)
+                                    </span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fab fa-github mt-1 w-5 text-blue-500"></i>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        <a href="https://memark0007.github.io" target="_blank"
+                                            class="hover:text-blue-500 transition-colors">
+                                            memark0007.github.io
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> ดูเว็บไซต์</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> ดูโค้ด</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>ชื่อโปรเจค 2</h3>
-                        <p>คำอธิบายโปรเจค 2 โดยย่อ ระบุเทคโนโลยีที่ใช้และปัญหาที่แก้ไข</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> ดูเว็บไซต์</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> ดูโค้ด</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>ชื่อโปรเจค 3</h3>
-                        <p>คำอธิบายโปรเจค 3 โดยย่อ ระบุเทคโนโลยีที่ใช้และปัญหาที่แก้ไข</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> ดูเว็บไซต์</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> ดูโค้ด</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">ติดต่อฉัน</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>ข้อมูลติดต่อ</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+66 XX XXX XXXX</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>กรุงเทพฯ, ประเทศไทย</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>ส่งข้อความ</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">ชื่อ</label>
-                            <input type="text" id="name" name="name" required>
+                        <!-- Professional Info -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-6 dark:text-white text-slate-800">Professional Interests
+                            </h3>
+                            <p class="mb-6 dark:text-slate-300 text-slate-600">
+                                As a Software Engineer, I focus on creating robust, scalable solutions for complex
+                                problems. I believe in continuous learning and staying updated with the latest
+                                technologies.
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-3"></span>
+                                    <span class="dark:text-slate-300 text-slate-600">Design Patterns</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-3"></span>
+                                    <span class="dark:text-slate-300 text-slate-600">Microservice Architecture</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-3"></span>
+                                    <span class="dark:text-slate-300 text-slate-600">Generative AI</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-3"></span>
+                                    <span class="dark:text-slate-300 text-slate-600">Cloud Computing</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-3"></span>
+                                    <span class="dark:text-slate-300 text-slate-600">Performance Optimization</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="email">อีเมล</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">ข้อความ</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn primary-btn">ส่งข้อความ</button>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Work Experience</h2>
+
+                <!-- ChomCHOB Experience -->
+                <div class="glassmorphism-card p-8 md:p-10 rounded-2xl max-w-4xl mx-auto mb-10 slideInUp">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Software Engineer</h3>
+                            <p class="text-xl font-semibold dark:text-white text-slate-800 mt-1">ChomCHOB</p>
+                        </div>
+                        <div class="mt-2 md:mt-0 md:text-right">
+                            <p class="dark:text-slate-300 text-slate-600 font-medium">Aug 2023 – Oct 2024</p>
+                            <p class="dark:text-slate-400 text-slate-500">Bangkok, Thailand</p>
+                        </div>
+                    </div>
+
+                    <div class="dark:text-slate-300 text-slate-600">
+                        <ul class="space-y-3 list-disc pl-5">
+                            <li>Enterprise-Scale Systems: developed a Customer Management System handling data for over
+                                5 million customers.</li>
+                            <li>System Integration: updated APIs to match new design specifications, enhancing system
+                                integration.</li>
+                            <li>Financial Technology: created a manual funds transfer system to support non-automated
+                                transactions.</li>
+                            <li>Investment Solutions: improved code handling request confirmations related to investment
+                                decisions.</li>
+                            <li>System Administration: built a dashboard for transferring points throughout the entire
+                                system.</li>
+                            <li>User Experience: developed a service portal serving as a landing page for customers to
+                                choose services.</li>
+                            <li>E-commerce Development: created a rewards sales platform similar to Shopee and Lazada to
+                                boost customer engagement.</li>
+                            <li>Cross-Platform Development: updated APIs to support the transition from a mobile app to
+                                a web app, ensuring a smooth user experience.</li>
+                            <li>Project Planning: collaborated with the Tech Lead to analyze and define project
+                                requirements, ensuring alignment with business objectives.</li>
+                            <li>Performance Optimization: implemented caching mechanisms using Redis, resulting in a 30%
+                                decrease in server response times.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- I&I Group PCL Experience -->
+                <div class="glassmorphism-card p-8 md:p-10 rounded-2xl max-w-4xl mx-auto slideInUp">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Software Engineer</h3>
+                            <p class="text-xl font-semibold dark:text-white text-slate-800 mt-1">I&I Group PCL</p>
+                        </div>
+                        <div class="mt-2 md:mt-0 md:text-right">
+                            <p class="dark:text-slate-300 text-slate-600 font-medium">Apr 2022 – Sep 2022</p>
+                            <p class="dark:text-slate-400 text-slate-500">Chiang Mai, Thailand</p>
+                        </div>
+                    </div>
+
+                    <div class="dark:text-slate-300 text-slate-600">
+                        <ul class="space-y-3 list-disc pl-5">
+                            <li>Salesforce Development: developed a data management system for branch and salesperson
+                                performance display on Salesforce platform according to customer requirements.</li>
+                            <li>Front-End Development: Worked on web application development, with the front-end
+                                applying the Lightning Component Framework using JavaScript.</li>
+                            <li>Back-End Development: Controlled the database using Apex language for backend
+                                operations.</li>
+                            <li>Quality Assurance: Passed the inspection by the company's quality assurance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Education</h2>
+
+                <div class="glassmorphism-card p-8 md:p-10 rounded-2xl max-w-4xl mx-auto slideInUp">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                        <div>
+                            <img src="assets/images/cmu-logo.png" alt="Chiang Mai University" class="h-16 mb-4 hidden">
+                            <h3 class="text-2xl font-bold text-blue-600">Bachelor of Science in Computer Science</h3>
+                            <p class="text-xl font-semibold dark:text-white text-slate-800 mt-1">Minor in Finance and
+                                Banking</p>
+                            <p class="text-lg dark:text-slate-300 text-slate-600 mt-2">Chiang Mai University</p>
+                        </div>
+                        <div class="mt-4 md:mt-0 md:text-right">
+                            <p class="dark:text-slate-300 text-slate-600 font-medium">2019 - 2023</p>
+                            <p class="dark:text-slate-400 text-slate-500">GPA: 3.04</p>
+                        </div>
+                    </div>
+
+                    <div class="dark:text-slate-300 text-slate-600">
+                        <p class="mb-4">Relevant coursework:</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag-small">Data Structures</span>
+                            <span class="skill-tag-small">Algorithms</span>
+                            <span class="skill-tag-small">Database Systems</span>
+                            <span class="skill-tag-small">Software Engineering</span>
+                            <span class="skill-tag-small">Web Development</span>
+                            <span class="skill-tag-small">Computer Networks</span>
+                            <span class="skill-tag-small">AI & Machine Learning</span>
+                            <span class="skill-tag-small">Financial Management</span>
+                            <span class="skill-tag-small">Banking Operations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Technical Skills</h2>
+
+                <!-- Skill Categories -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Programming Languages -->
+                    <div class="glassmorphism-card p-8 rounded-2xl slideInUp">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-code text-2xl text-blue-500 mr-4"></i>
+                            <h3 class="text-xl font-bold dark:text-white text-slate-800">Programming Languages</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Rust</span>
+                            <span class="skill-tag">Go</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="glassmorphism-card p-8 rounded-2xl slideInUp">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-layer-group text-2xl text-blue-500 mr-4"></i>
+                            <h3 class="text-xl font-bold dark:text-white text-slate-800">Frameworks & Libraries</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Next.js</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Storage -->
+                    <div class="glassmorphism-card p-8 rounded-2xl slideInUp">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-database text-2xl text-blue-500 mr-4"></i>
+                            <h3 class="text-xl font-bold dark:text-white text-slate-800">Databases & Storage</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MariaDB</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Kafka</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="glassmorphism-card p-8 rounded-2xl slideInUp">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-tools text-2xl text-blue-500 mr-4"></i>
+                            <h3 class="text-xl font-bold dark:text-white text-slate-800">DevOps & Tools</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Bitbucket</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">Metabase</span>
+                            <span class="skill-tag">Slack</span>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div class="glassmorphism-card p-8 rounded-2xl slideInUp col-span-1 md:col-span-2">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-brain text-2xl text-blue-500 mr-4"></i>
+                            <h3 class="text-xl font-bold dark:text-white text-slate-800">AI & Machine Learning</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag">Ollama</span>
+                            <span class="skill-tag">Transformer</span>
+                            <span class="skill-tag">Neural Network</span>
+                            <span class="skill-tag">LLM</span>
+                            <span class="skill-tag">Pytorch</span>
+                            <span class="skill-tag">RAG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Project 1 -->
+                    <div class="project-card glassmorphism-card rounded-2xl overflow-hidden slideInUp">
+                        <div class="project-image-container relative h-48 overflow-hidden">
+                            <img src="assets/images/projects/project1.jpg" alt="Enterprise CMS"
+                                class="w-full h-full object-cover transition-transform duration-500">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 dark:text-white text-slate-800">Enterprise CMS</h3>
+                            <p class="text-sm dark:text-slate-300 text-slate-600 mb-4">Customer Management System
+                                handling data for over 5 million customers with high performance and security.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag-small">React.js</span>
+                                <span class="skill-tag-small">Node.js</span>
+                                <span class="skill-tag-small">Redis</span>
+                                <span class="skill-tag-small">MySQL</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#"
+                                    class="text-blue-500 hover:text-blue-700 transition-colors flex items-center">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Source Code" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glassmorphism-card rounded-2xl overflow-hidden slideInUp">
+                        <div class="project-image-container relative h-48 overflow-hidden">
+                            <img src="assets/images/projects/project2.jpg" alt="Rewards Sales Platform"
+                                class="w-full h-full object-cover transition-transform duration-500">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 dark:text-white text-slate-800">Rewards Platform</h3>
+                            <p class="text-sm dark:text-slate-300 text-slate-600 mb-4">E-commerce platform similar to
+                                Shopee and Lazada for customer rewards and point redemption.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag-small">Next.js</span>
+                                <span class="skill-tag-small">Express.js</span>
+                                <span class="skill-tag-small">MongoDB</span>
+                                <span class="skill-tag-small">AWS</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#"
+                                    class="text-blue-500 hover:text-blue-700 transition-colors flex items-center">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Source Code" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glassmorphism-card rounded-2xl overflow-hidden slideInUp">
+                        <div class="project-image-container relative h-48 overflow-hidden">
+                            <img src="assets/images/projects/project3.jpg" alt="Service Portal"
+                                class="w-full h-full object-cover transition-transform duration-500">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 dark:text-white text-slate-800">Service Portal</h3>
+                            <p class="text-sm dark:text-slate-300 text-slate-600 mb-4">Landing page for customers to
+                                choose services with user-friendly interface and personalized recommendations.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag-small">TypeScript</span>
+                                <span class="skill-tag-small">React.js</span>
+                                <span class="skill-tag-small">Node.js</span>
+                                <span class="skill-tag-small">Docker</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#"
+                                    class="text-blue-500 hover:text-blue-700 transition-colors flex items-center">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Source Code" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glassmorphism-card rounded-2xl overflow-hidden slideInUp">
+                        <div class="project-image-container relative h-48 overflow-hidden">
+                            <img src="assets/images/projects/project4.jpg" alt="Admin Dashboard"
+                                class="w-full h-full object-cover transition-transform duration-500">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 dark:text-white text-slate-800">Admin Dashboard</h3>
+                            <p class="text-sm dark:text-slate-300 text-slate-600 mb-4">Comprehensive dashboard for
+                                transferring and managing points throughout the entire system.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag-small">React.js</span>
+                                <span class="skill-tag-small">Redux</span>
+                                <span class="skill-tag-small">Chart.js</span>
+                                <span class="skill-tag-small">Material UI</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#"
+                                    class="text-blue-500 hover:text-blue-700 transition-colors flex items-center">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Source Code" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glassmorphism-card rounded-2xl overflow-hidden slideInUp">
+                        <div class="project-image-container relative h-48 overflow-hidden">
+                            <img src="assets/images/projects/project5.jpg" alt="Salesforce Performance Dashboard"
+                                class="w-full h-full object-cover transition-transform duration-500">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 dark:text-white text-slate-800">Salesforce Dashboard</h3>
+                            <p class="text-sm dark:text-slate-300 text-slate-600 mb-4">Data management system for branch
+                                and salesperson performance display on Salesforce platform.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag-small">Salesforce</span>
+                                <span class="skill-tag-small">Lightning</span>
+                                <span class="skill-tag-small">Apex</span>
+                                <span class="skill-tag-small">JavaScript</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#"
+                                    class="text-blue-500 hover:text-blue-700 transition-colors flex items-center">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Source Code" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card glassmorphism-card rounded-2xl overflow-hidden slideInUp">
+                        <div class="project-image-container relative h-48 overflow-hidden">
+                            <img src="assets/images/projects/project6.jpg" alt="Funds Transfer System"
+                                class="w-full h-full object-cover transition-transform duration-500">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 dark:text-white text-slate-800">Funds Transfer System</h3>
+                            <p class="text-sm dark:text-slate-300 text-slate-600 mb-4">Manual funds transfer system to
+                                support non-automated transactions with high security measures.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag-small">Java</span>
+                                <span class="skill-tag-small">Spring Boot</span>
+                                <span class="skill-tag-small">PostgreSQL</span>
+                                <span class="skill-tag-small">JWT</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#"
+                                    class="text-blue-500 hover:text-blue-700 transition-colors flex items-center">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Source Code" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get In Touch</h2>
+
+                <div class="glassmorphism-card p-8 md:p-10 rounded-2xl max-w-4xl mx-auto slideInUp">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Contact Info -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-6 dark:text-white text-slate-800">Contact Information</h3>
+                            <p class="mb-8 dark:text-slate-300 text-slate-600">
+                                Feel free to reach out if you have any questions or opportunities. I'm always open to
+                                discussing new projects, creative ideas, or opportunities to be part of your vision.
+                            </p>
+
+                            <ul class="space-y-5">
+                                <li class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                                        <i class="fas fa-envelope text-blue-500"></i>
+                                    </div>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        <a href="mailto:kittisak.lamnoi@gmail.com"
+                                            class="hover:text-blue-500 transition-colors">
+                                            kittisak.lamnoi@gmail.com
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                                        <i class="fas fa-phone text-blue-500"></i>
+                                    </div>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">+66 634325851</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                                        <i class="fas fa-map-marker-alt text-blue-500"></i>
+                                    </div>
+                                    <span class="ml-4 dark:text-slate-300 text-slate-600">
+                                        125 Rim Subdistrict, Tha Wang Pha District<br>
+                                        Nan 55140, Thailand
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <!-- Social Links -->
+                            <div class="mt-10">
+                                <h4 class="text-lg font-semibold mb-4 dark:text-white text-slate-800">Find me on</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://github.com/memark0007" target="_blank" class="social-icon"
+                                        aria-label="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/" target="_blank" class="social-icon"
+                                        aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://twitter.com/" target="_blank" class="social-icon"
+                                        aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-6 dark:text-white text-slate-800">Send Me a Message</h3>
+
+                            <form id="contact-form" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block mb-2 dark:text-slate-300 text-slate-600">Your
+                                        Name</label>
+                                    <input type="text" id="name" placeholder="John Doe"
+                                        class="glassmorphism-input w-full p-3 rounded-lg" required>
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block mb-2 dark:text-slate-300 text-slate-600">Your
+                                        Email</label>
+                                    <input type="email" id="email" placeholder="john@example.com"
+                                        class="glassmorphism-input w-full p-3 rounded-lg" required>
+                                </div>
+
+                                <div>
+                                    <label for="subject"
+                                        class="block mb-2 dark:text-slate-300 text-slate-600">Subject</label>
+                                    <input type="text" id="subject" placeholder="How can I help you?"
+                                        class="glassmorphism-input w-full p-3 rounded-lg" required>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block mb-2 dark:text-slate-300 text-slate-600">Your
+                                        Message</label>
+                                    <textarea id="message" rows="5" placeholder="Write your message here..."
+                                        class="glassmorphism-input w-full p-3 rounded-lg" required></textarea>
+                                </div>
+
+                                <button type="submit" class="glassmorphism-btn-primary px-6 py-3 rounded-full w-full">
+                                    <i class="fas fa-paper-plane mr-2"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 ชื่อของคุณ. สงวนลิขสิทธิ์ทั้งหมด.</p>
+    <footer class="py-10 border-t border-slate-200 dark:border-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#"
+                        class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 transition-all duration-500">
+                        KITTISAK LAMNOI
+                    </a>
+                    <p class="mt-2 dark:text-slate-400 text-slate-500">&copy; 2025. All rights reserved.</p>
+                </div>
+
+                <!-- Footer Navigation -->
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                    <a href="#home"
+                        class="dark:text-slate-400 text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about"
+                        class="dark:text-slate-400 text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">About</a>
+                    <a href="#experience"
+                        class="dark:text-slate-400 text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Experience</a>
+                    <a href="#skills"
+                        class="dark:text-slate-400 text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#contact"
+                        class="dark:text-slate-400 text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
+
 </html>
